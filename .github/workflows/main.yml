@@ -3,6 +3,7 @@ name: Main
 on:
   push:
     branches-ignore: "release*"
+  repository_dispatch:
 
 jobs:
   test:
