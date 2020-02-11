@@ -4,6 +4,7 @@ on:
   push:
     branches-ignore: "release*"
   repository_dispatch:
+    types: ["blt-jenkins"]
 
 jobs:
   test:
