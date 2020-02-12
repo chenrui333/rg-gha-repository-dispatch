@@ -10,8 +10,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo
-        run: echo $GITHUB_REF
+      - uses: actions/checkout@v2
+      - run: |
+        make echo-env
       - name: Ref
         if: github.ref == 'refs/heads/master'
         run: echo $GITHUB_REF
