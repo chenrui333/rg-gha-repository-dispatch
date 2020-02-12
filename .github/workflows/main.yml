@@ -11,8 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-        make echo-env
+      - name: echo-env
+        env:
+          STAGE: ${{ github.event.client_payload.image_tag }}
+        run: |
+          make echo-env
       - name: Ref
         if: github.ref == 'refs/heads/master'
         run: echo $GITHUB_REF
