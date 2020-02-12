@@ -1,5 +1,7 @@
 # rg-gha-repository-dispatch
 
+![Main](https://github.com/chenrui333/rg-gha-repository-dispatch/workflows/Main/badge.svg)
+
 test repo used for testing the repository_dispatch event trigger and env setup.
 
 ## Test script
